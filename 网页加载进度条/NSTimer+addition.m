@@ -9,5 +9,28 @@
 #import "NSTimer+addition.h"
 
 @implementation NSTimer (addition)
+- (void)pauseTimer
+{
+    if (!self.isValid) {
+        return;
+    }
+    [self setFireDate:[NSDate distantFuture]];
+}
+
+- (void)resumeTimer
+{
+    if (!self.isValid) {
+        return;
+    }
+    [self setFireDate:[NSDate date]];
+}
+
+- (void)resumeTimerWithTimeInterval:(NSTimeInterval)timeInterval
+{
+    if (!self.isValid) {
+        return;
+    }
+    [self setFireDate:[NSDate dateWithTimeIntervalSinceNow:timeInterval]];
+}
 
 @end

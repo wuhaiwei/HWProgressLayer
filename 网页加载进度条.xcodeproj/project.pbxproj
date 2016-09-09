@@ -13,6 +13,10 @@
 		FD09D3881D816020006C52B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD09D3861D816020006C52B7 /* Main.storyboard */; };
 		FD09D38A1D816020006C52B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD09D3891D816020006C52B7 /* Assets.xcassets */; };
 		FD09D38D1D816020006C52B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD09D38B1D816020006C52B7 /* LaunchScreen.storyboard */; };
+		FD09D3961D8160C8006C52B7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD09D3951D8160C8006C52B7 /* SecondViewController.m */; };
+		FD6A15CD1D82629200CF272C /* NSTimer+addition.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6A15CC1D82629200CF272C /* NSTimer+addition.m */; };
+		FD6A15D01D8299F100CF272C /* HWProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6A15CF1D8299F100CF272C /* HWProgressLayer.m */; };
+		FD6A15D21D82A5FE00CF272C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6A15D11D82A5FE00CF272C /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		FD09D3891D816020006C52B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD09D38C1D816020006C52B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD09D38E1D816020006C52B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD09D3941D8160C8006C52B7 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		FD09D3951D8160C8006C52B7 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		FD6A15CB1D82629200CF272C /* NSTimer+addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+addition.h"; sourceTree = "<group>"; };
+		FD6A15CC1D82629200CF272C /* NSTimer+addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+addition.m"; sourceTree = "<group>"; };
+		FD6A15CE1D8299F100CF272C /* HWProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWProgressLayer.h; sourceTree = "<group>"; };
+		FD6A15CF1D8299F100CF272C /* HWProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWProgressLayer.m; sourceTree = "<group>"; };
+		FD6A15D11D82A5FE00CF272C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6A15D21D82A5FE00CF272C /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +54,7 @@
 		FD09D3711D816020006C52B7 = {
 			isa = PBXGroup;
 			children = (
+				FD6A15D11D82A5FE00CF272C /* QuartzCore.framework */,
 				FD09D37C1D816020006C52B7 /* 网页加载进度条 */,
 				FD09D37B1D816020006C52B7 /* Products */,
 			);
@@ -62,6 +75,12 @@
 				FD09D3811D816020006C52B7 /* AppDelegate.m */,
 				FD09D3831D816020006C52B7 /* ViewController.h */,
 				FD09D3841D816020006C52B7 /* ViewController.m */,
+				FD09D3941D8160C8006C52B7 /* SecondViewController.h */,
+				FD09D3951D8160C8006C52B7 /* SecondViewController.m */,
+				FD6A15CB1D82629200CF272C /* NSTimer+addition.h */,
+				FD6A15CC1D82629200CF272C /* NSTimer+addition.m */,
+				FD6A15CE1D8299F100CF272C /* HWProgressLayer.h */,
+				FD6A15CF1D8299F100CF272C /* HWProgressLayer.m */,
 				FD09D3861D816020006C52B7 /* Main.storyboard */,
 				FD09D3891D816020006C52B7 /* Assets.xcassets */,
 				FD09D38B1D816020006C52B7 /* LaunchScreen.storyboard */,
@@ -149,9 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD09D3961D8160C8006C52B7 /* SecondViewController.m in Sources */,
 				FD09D3851D816020006C52B7 /* ViewController.m in Sources */,
 				FD09D3821D816020006C52B7 /* AppDelegate.m in Sources */,
+				FD6A15D01D8299F100CF272C /* HWProgressLayer.m in Sources */,
 				FD09D37F1D816020006C52B7 /* main.m in Sources */,
+				FD6A15CD1D82629200CF272C /* NSTimer+addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +322,7 @@
 				FD09D3931D816020006C52B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
